@@ -1,0 +1,13 @@
+extension_dir = "ext"
+cgi.force_redirect = 0
+cgi.fix_pathinfo = 1
+fastcgi.impersonate = 1
+fastcgi.logging = 0
+extension=php_mbstring.dll
+extension=php_exif.dll      ; Must be after mbstring as it depends on it
+extension=php_mysql.dll
+extension=php_mysqli.dll
+extension=php_openssl.dll
+extension=php_pdo_mysql.dll
+date.timezone = "ENTER YOUR TIMEZONE HERE"
+session.entropy_length = 32
