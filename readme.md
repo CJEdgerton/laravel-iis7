@@ -11,10 +11,8 @@
   - Enable or disable plugins
   - Make sure that you have the correct extensions enabled based on PHP versions used etc
   - Extensions are stored in ProgramFiles\PHP\version\ext\, download them there if needed.
-	****
-		The extensions that you enable are global despite the menu appearing on the root of the server, AND within each created site.
-		Enable all extensions that are used for any application, even if applications are using different PHP versions and different extensions.
-	****
+    >The extensions that you enable are global despite the menu appearing on the root of the server, AND within each created site. Enable all extensions that are used for any application, even if applications are using different PHP versions and different extensions.
+
 
 ## Application Setup:
 
@@ -26,9 +24,7 @@
    - run `composer update`
    - configure your .env file
    - set application key: `php artisan key:generate`
-	******
-	Never lose the key!!! You will not be able to decrypt any encrypted data if you change the key!!!
-	******
+      >Never lose the key!!! You will not be able to decrypt any encrypted data if you change the key!!!
    - run `composer dump-autoload`
    - run migrations: `php artisan migrate` | `php artisan db:seed` ( varies by case )
 
@@ -43,7 +39,7 @@
    - Set physical path to public directory of application
       - This can also be editted if needed at: Actions > Basic Settings > Physical Path > E:\wwwroot\apps_dir\test_app\public
    - Set http binding to IP and host.
-      - This can also be editted if needed at: Edit Bindings on right menu	
+      - This can also be editted if needed at: Edit Bindings on right menu  
 
 4. Change permissions of app's storage folder
    - In File Explorer go to your application's storage folder. example: wwwroot\apps_dir\test_app\public\storage
